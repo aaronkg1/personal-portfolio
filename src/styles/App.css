@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  min-height: 90vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(216, 252, 240) 1%,
+    aquamarine 40%
+  );
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
