@@ -8,7 +8,6 @@
   transform-origin: 200px;
   transform: rotate(0deg);
   transition: 0.5s;
-  animation: rotateslowly 60s linear 0s infinite;
 }
 
 .avatar-picture {
