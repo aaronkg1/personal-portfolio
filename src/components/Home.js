@@ -1,6 +1,5 @@
 import React from "react";
 import Spinner from "./SpinningMenu";
-import "";
 
 const Home = () => {
   return (
