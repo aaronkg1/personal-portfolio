@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&family=Yeon+Sung&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +7,15 @@
 }
 
 .page-container {
-  min-height: 90vh;
+  min-height: 100vh;
   min-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(
     to right,
-    rgb(216, 247, 252) 1%,
-    aquamarine 40%
+    rgb(89, 175, 189),
+    rgb(58, 113, 122)
   );
 }
 
@@ -22,4 +24,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 500px) {
+  nav {
+    display: none;
+  }
 }
