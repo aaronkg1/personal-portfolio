@@ -10,11 +10,10 @@ a {
 }
 
 .page-container {
-  min-height: 200vh;
   min-width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 100vh);
+  grid-auto-rows: fit-content;
   background-image: linear-gradient(
     to right,
     rgb(71, 142, 153),
@@ -25,9 +24,9 @@ a {
 
 .main-content {
   grid-column: 2 / 4;
-  height: 100vh;
+  height: fit-content;
   display: grid;
-  grid-template-rows: repeat(3, 100vh);
+  grid-template-rows: repeat(auto, fit-content);
   justify-content: center;
   align-items: center;
 }
