@@ -1,0 +1,58 @@
+.project-card {
+  max-height: 350px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hover-zoom {
+  height: 300px;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.5);
+}
+
+.project-button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 0.7em;
+  border-radius: 15px;
+  border: solid rgb(225, 102, 20) 3px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  transition: border-color 0.8s;
+  display: flex;
+  gap: 10px;
+  font-size: 1.2em;
+}
+
+.project-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.light .project-button {
+  border-color: rgb(131, 0, 164);
+}
