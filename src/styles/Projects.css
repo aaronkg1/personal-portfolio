@@ -1,6 +1,22 @@
 .projects-container {
-  height: 100vh;
+  height: fit-content;
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 50px;
+  left: -150px;
+  transition: left 0.5s;
+  padding-bottom: 50px;
+}
+
+.light .projects-container {
+  left: 0px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-rows: minmax(300px, 300px);
+  gap: 100px;
+  padding-top: 50px;
 }
