@@ -1,0 +1,67 @@
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 4em;
+  height: 100vh;
+  transition: left 0.5s;
+  transform: perspective(75em);
+  position: relative;
+  left: -150px;
+}
+
+.light .welcome-container {
+  left: 0;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: calc(var(--custom-height) / 10);
+}
+
+.emphasise {
+  color: rgb(225, 102, 20);
+  transition: color 0.8s;
+}
+
+.learn-more {
+  outline: none;
+  border: none;
+  padding: 30px;
+  font-size: 0.7em;
+  border-radius: 15px;
+  border: solid rgb(225, 102, 20) 3px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+  transition: border-color 0.8s;
+}
+
+.light .learn-more {
+  border-color: rgb(131, 0, 164);
+}
+
+.light .emphasise {
+  color: rgb(131, 0, 164);
+}
+
+.down-arrow {
+  transition: color 0.5s ease-in-out;
+  color: white;
+}
+
+.light .learn-more:hover > .down-arrow {
+  color: rgb(131, 0, 164);
+}
+
+.learn-more:hover .down-arrow {
+  color: rgb(225, 102, 20);
+}
