@@ -14,6 +14,7 @@ function App() {
         className={theme === "dark" ? "page-container" : "page-container light"}
       >
         <Spinner />
+        <Nav />
         <main className="main-content">
           <Home />
           <About />
