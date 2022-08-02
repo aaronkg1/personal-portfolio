@@ -13,7 +13,6 @@ a {
   min-width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: fit-content;
   background-image: linear-gradient(
     to right,
     rgb(71, 142, 153),
@@ -54,4 +53,22 @@ nav {
   justify-content: center;
   position: sticky;
   top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .page-container {
+    width: 100vw;
+    position: absolute;
+  }
+  .nav {
+    height: 10vh;
+  }
+  .main-content {
+    width: 100vw;
+    position: relative;
+    grid-column: 1 / 4;
+  }
+  .section-title {
+    font-size: 3em;
+  }
 }
