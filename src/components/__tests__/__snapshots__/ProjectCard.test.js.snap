@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<li
+  className="project-card"
+  data-testid="ProjectCard-1"
+>
+  <div
+    className="image-wrapper"
+  >
+    <img
+      alt="SnapShot Test"
+      className="hover-zoom"
+      data-testid="card-image"
+      src="https://testOne.faketest"
+    />
+  </div>
+  <div
+    className="info-container"
+  >
+    <h2>
+      SnapShot Test
+    </h2>
+    <p>
+      Snapshot updates
+    </p>
+    <div
+      className="button-wrapper"
+    >
+      <button
+        className="project-button"
+      >
+        <a
+          alt="SnapShot Test"
+          href=""
+        >
+          Live App
+        </a>
+      </button>
+      <button
+        className="project-button"
+      >
+        <a
+          alt="SnapShot Test repository"
+          href=""
+        >
+          Repository
+        </a>
+      </button>
+    </div>
+  </div>
+</li>
+`;
