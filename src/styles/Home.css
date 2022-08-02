@@ -7,14 +7,14 @@
   font-family: "Roboto", sans-serif;
   font-size: 4em;
   height: 100vh;
-  transition: left 0.5s;
-  transform: perspective(75em);
+  max-width: 100vw;
+  transition: transform 0.5s;
   position: relative;
-  left: -150px;
+  transform: translateX(-150px);
 }
 
 .light .welcome-container {
-  left: 0;
+  transform: translateX(0);
 }
 
 .message-container {
@@ -24,6 +24,7 @@
   align-items: center;
   border-radius: 10px;
   padding: calc(var(--custom-height) / 10);
+  text-align: center;
 }
 
 .emphasise {
@@ -64,4 +65,17 @@
 
 .learn-more:hover .down-arrow {
   color: rgb(225, 102, 20);
+}
+
+@media screen and (max-width: 1200px) {
+  .welcome-container {
+    transform: translateX(0);
+    font-size: 2em;
+  }
+
+  .message-container {
+    width: 100vw;
+    padding: 30px;
+    text-align: center;
+  }
 }
