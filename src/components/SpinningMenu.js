@@ -36,7 +36,7 @@ const Spinner = () => {
   };
 
   return (
-    <nav>
+    <nav className="desktop-menu">
       <ul className={active ? `spinner-container active` : "spinner-container"}>
         <li className="spinner-title" onClick={toggleMenu}>
           Menu
