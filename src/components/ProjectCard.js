@@ -1,15 +1,18 @@
 import React from "react";
 import "../styles/ProjectCard.css";
-const ProjectCard = (props) => {
-  const { title, description, url, position, liveLink, repository } = props;
+const ProjectCard = ({ project }) => {
+  const { title, description, url, liveLink, repository } = project;
 
   return (
-    <li key={`${title}ID`} className="project-card">
-      {position === "left" ? (
-        <div className="image-wrapper">
-          <img src={url} alt={title} className="hover-zoom" />
-        </div>
-      ) : null}
+    <li key={`${title}ID`} className="project-card" data-testid="ProjectCard-1">
+      <div className="image-wrapper">
+        <img
+          src={url}
+          alt={title}
+          className="hover-zoom"
+          data-testid="card-image"
+        />
+      </div>
       <div className="info-container">
         <h2>{title}</h2>
         <p>{description}</p>
@@ -26,11 +29,6 @@ const ProjectCard = (props) => {
           </button>
         </div>
       </div>
-      {position === "right" ? (
-        <div className="image-wrapper">
-          <img src={url} alt={title} className="hover-zoom" />
-        </div>
-      ) : null}
     </li>
   );
 };
