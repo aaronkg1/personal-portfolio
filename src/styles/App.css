@@ -36,6 +36,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-size: 4em;
   color: white;
+  align-self: baseline;
 }
 
 .light {

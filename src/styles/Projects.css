@@ -10,6 +10,10 @@
   padding-bottom: 50px;
 }
 
+.projects-container .section-title {
+  align-self: center;
+}
+
 .light .projects-container {
   transform: translateX(0);
 }
