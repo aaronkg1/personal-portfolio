@@ -17,8 +17,10 @@ const About = () => {
   return (
     <section className="about-container" id="about">
       <h1 className="section-title">About</h1>
-      <div className="about-left">
+      <div className="avatar-wrapper">
         <img src={avatar} alt="Aaron avatar pic" className="avatar" />
+      </div>
+      <div className="about-left">
         <p className="introduction">
           Why did a pharmacology graduate decide to venture into the world of
           software engineering? <br />
