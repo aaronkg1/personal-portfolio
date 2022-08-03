@@ -1,22 +1,22 @@
 :root {
-  --custom-height: calc(100vh * 0.8);
+  --custom-height: 700px;
 }
 
 .spinner-container {
   position: absolute;
-  left: calc(var(--custom-height) / 2 * -1);
+  left: -350px;
   min-height: var(--custom-height);
-  width: var(--custom-height);
+  min-width: var(--custom-height);
   display: flex;
   justify-content: center;
   align-items: center;
-  transform-origin: calc(var(--custom-height) / 2);
+  transform-origin: 350px;
   transform: rotate(0deg) translateX(-250px);
   transition: 0.5s;
   font-family: "Roboto", sans-serif;
 }
 
-.avatar-picture {
+.sun {
   position: absolute;
   list-style: none;
   cursor: pointer;
@@ -45,7 +45,7 @@
 .spinner-item {
   position: absolute;
   list-style: none;
-  transform-origin: calc((var(--custom-height) / 1.7));
+  transform-origin: 410px;
   left: 0;
   transform: rotate(0deg);
   transition-property: transform, background-color;
@@ -73,7 +73,7 @@
   color: black;
 }
 
-.spinner-container.active .avatar-picture {
+.spinner-container.active .sun {
   box-shadow: 30px 5px 10px 10px rgba(227, 221, 167, 0.321);
   background-image: linear-gradient(
     to right,
