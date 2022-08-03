@@ -41,7 +41,7 @@ const Spinner = () => {
         <li className="spinner-title" onClick={toggleMenu}>
           Menu
         </li>
-        <li className="avatar-picture" onClick={toggleMenu}>
+        <li className="sun" onClick={toggleMenu}>
           <p className="menu-label">{currentHover}</p>
         </li>
         <li className="spinner-item" style={{ "--i": 0 }}>
