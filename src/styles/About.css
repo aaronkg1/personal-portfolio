@@ -1,5 +1,5 @@
 .about-container {
-  height: 100vh;
+  height: fit-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
@@ -10,6 +10,8 @@
   padding-bottom: 50px;
   padding-right: 50px;
   transition: transform 0.5s;
+  margin-bottom: 5px;
+  overflow: auto;
 }
 
 .light .about-container {

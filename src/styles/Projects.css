@@ -25,11 +25,11 @@
   .projects-container {
     transform: translateX(0);
     right: 0;
-    gap: 30px;
+    gap: 70px;
   }
 
   .project-grid {
-    grid-template-rows: minmax(150px, 300px);
+    grid-template-rows: minmax(150px, 400px);
     padding: 30px;
   }
 }
